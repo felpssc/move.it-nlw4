@@ -83,10 +83,12 @@ export function ChallengesProvider({
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
     const challenge = challenges[randomChallengeIndex];
     setActiveChallenge(challenge);
+    let pageHeight = window.innerHeight;
+    window.scrollTo(0, pageHeight);
 
     new Audio('/notification.mp3').play();
 
-    if(Notification.permission === 'granted') {
+    if(Notification.permission === 'granted' && window.innerWidth > 728) {
       new Notification('Ciclo finalizado!', {
         body: `Novo desafio disponível, valendo ${challenge.amount} xp! 💪`,
       });
