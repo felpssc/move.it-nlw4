@@ -40,7 +40,7 @@ export function ChallengesProvider({
   const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
   const [activeChallenge, setActiveChallenge] = useState(null);
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
-  const [isLevelUpModalOpen, setIsOpenModalOpen] = useState(false);
+  const [isLevelUpModalOpen, setIsLevelModalOpen] = useState(false);
 
   useEffect(() => {
     Notification.requestPermission();
@@ -54,7 +54,7 @@ export function ChallengesProvider({
 
   function levelUp() {
     setLevel(level + 1);
-    setIsOpenModalOpen(true);
+    setIsLevelModalOpen(true);
   }
 
   function resetChallenge() {
@@ -96,7 +96,7 @@ export function ChallengesProvider({
   }
 
   function closeLevelUpModal() {
-    setIsOpenModalOpen(false);
+    setIsLevelModalOpen(false);
   }
 
   return (

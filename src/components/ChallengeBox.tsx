@@ -1,12 +1,15 @@
 import { useContext } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
 import { CountdownContext } from '../contexts/CountdownContext';
+import { DarkModeContext } from '../contexts/DarkModeContext';
 import styles from '../styles/components/ChallengeBox.module.css';
+import stylesDark from '../styles/components/ChallengeBox.dark.module.css';
 
 export function ChallengeBox() {
 
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
   const { resetCountdown } = useContext(CountdownContext);
+  const { isDarkMode } = useContext(DarkModeContext);
 
   function handleChallengeSucceeded() {
     completeChallenge();
@@ -19,7 +22,7 @@ export function ChallengeBox() {
   }
 
   return (
-    <div className={styles.challengeBoxContainer}>
+    <div className={isDarkMode ? styles.challengeBoxContainer : stylesDark.challengeBoxContainerDark}>
       { activeChallenge ? (
         <div className={styles.challengeActive}>
           <header>Ganhe {activeChallenge.amount} xp</header>

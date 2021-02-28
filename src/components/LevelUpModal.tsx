@@ -1,9 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { ChallengesContext } from '../contexts/ChallengesContext';
+import { DarkModeContext } from '../contexts/DarkModeContext';
 import styles from '../styles/components/LevelUpModal.module.css';
+
+
 export function LevelUpModal() {
   
   const { level, closeLevelUpModal } = useContext(ChallengesContext);
+  const { isDarkMode } = useContext(DarkModeContext);
   
   return (
     <div className={styles.overlay}>
