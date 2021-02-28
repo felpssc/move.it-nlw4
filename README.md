@@ -38,7 +38,8 @@ As vezes podemos passar muito tempo sentados na frente do computador, seja estud
   - [x] Typescript
 
 <br>
-
+<h2>Acessível em: <a href="https://moveit-nlw-sand.vercel.app/">Move.it</a></h2>
+<br>
 <h2>Instalação e uso</h2>
 
 ```bash
