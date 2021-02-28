@@ -1,6 +1,6 @@
-.challengeBoxContainer {
+.challengeBoxContainerDark {
   height: 100%;
-  background: var(--white);
+  background: var(--dark-component);
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   padding: 1.5rem 2rem;
@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--gray-line);
+}
+
+.challengeBoxContainerDark strong {
+  color: var(--white) !important;
 }
 
 .challengeNotActive {
@@ -43,7 +48,7 @@
 }
 
 .challengeActive header {
-  color: (--blue);
+  color: var(--white);
   font-weight: 600;
   font-size: 1.25rem;
   padding: 0 2rem 1.5rem;
@@ -61,7 +66,7 @@
 .challengeActive main strong {
   font-weight: 600;
   font-size: 2rem;
-  color: var(--title);
+  color: var(--white);
   margin: 1.5rem 0 1rem;
 }
 
@@ -100,11 +105,8 @@
   filter: brightness(0.9);
 }
 
-
-/* MOBILE SCREENS */
-
 @media(max-width: 728px) {
-  .challengeBoxContainer {
+  .challengeBoxContainerDark {
     height: 30rem;
     margin-bottom: 1.5rem;
   }

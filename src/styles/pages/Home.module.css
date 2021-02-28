@@ -13,4 +13,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
   align-content: center;
-} 
+}
+
+@media(max-width: 728px) {
+  .container section {
+    height: auto;
+    display: flex;
+    flex-direction: inherit;
+    gap: 1.5rem;
+  }
+}

@@ -1,4 +1,4 @@
-.completedChallengesContainer {
+.completedChallengesContainerDark {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,18 +6,19 @@
   padding-bottom: 1rem;
   border-bottom: 1px solid #d7d8da;
   font-weight: 500;
+  color: var(--background);
 }
 
-.completedChallengesContainer span:first-child {
+.completedChallengesContainerDark span:first-child {
   font-size: 1.25rem;
 }
 
-.completedChallengesContainer span:last-child {
+.completedChallengesContainerDark span:last-child {
   font-size: 1.5rem;
 }
 
 @media(max-width: 728px) {
-  .completedChallengesContainer {
+  .completedChallengesContainerDark {
     margin: 1rem 0;
   }
 }
