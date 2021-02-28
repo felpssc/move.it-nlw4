@@ -17,12 +17,10 @@ As vezes podemos passar muito tempo sentados na frente do computador, seja estud
 <img width="460px" src="https://i.imgur.com/le1jOou.png"><img width="460px" src="https://i.imgur.com/dVaZejU.png">
 
 <br>
-<br>
 
 <h4 align="left">Mobile</h4>
 <h6 align="left"><img width="260px" src="https://i.imgur.com/35ZZdNe.png"><img width="260px" src="https://i.imgur.com/yPRCLU0.png"></h6>
 
-<br>
 <br>
 <br>
 
@@ -39,7 +37,6 @@ As vezes podemos passar muito tempo sentados na frente do computador, seja estud
   - [x] Next.js
   - [x] Typescript
 
-<br>
 <br>
 
 <h2>Instalação e uso</h2>
@@ -62,7 +59,7 @@ $ yarn dev
 <br>
 
 <h2>Next Level Week</h2>
-Este projeto foi desenvolvido baseado na 4º edição do evento Next Level Week, organizado pela <a href="https://rocketseat.com.br/">Rocketseat</a>
+Este projeto foi desenvolvido baseado na 4º edição do evento Next Level Week, organizado pela <a href="https://rocketseat.com.br/">Rocketseat</a>.
 
 <br>
 <br>
