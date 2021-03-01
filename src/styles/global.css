@@ -23,10 +23,12 @@
 body {
   background-color: var(--background);
   color: var(--text);
+  transition: background 1s;
 }
 
 body.backgroundDark {
   background-color: var(--background-dark);
+  transition: background 1s;
 }
 
 @media(max-width: 1080px) {
